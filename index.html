@@ -1,204 +1,586 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-        The Stetson Corpus of Individual Differences and Eye Movements SCIDEM
+      The Stetson Corpus of Individual Differences and Eye Movements SCIDEM
     </title>
     <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
     />
     <link href="css/bootstrap-reboot.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/stylesheet1.css" />
     <link
-            rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-            href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&family=Poppins:wght@200;300;400;500;600&display=swap"
-            rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
     />
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&display=swap">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
-    <link rel="stylesheet"
-          href="https://www.stetson.edu/software/webgarage/system/themes/stetson-university/assets/css/theme.min.css?v=20230210">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://www.stetson.edu/software/webgarage/system/themes/stetson-university/assets/css/theme.min.css?v=20230210"
+    />
     <script src="js/bootstrap.bundle.min.js"></script>
-</head>
-<body>
-<header>
-    
-    <ul class="list-inline mb-0">
+    <script
+      src="https://kit.fontawesome.com/2af3598ccd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <ul class="list-inline mb-0">
         <!-- Place the additional <li> elements here -->
-        <li class="list-inline-item"><a class="text-white" href="https://www.stetson.edu/administration/admissions/apply/">Apply</a></li>
-        <li class="list-inline-item"><a class="text-white" href="https://www.stetson.edu/other/visit/deland-campus.php">Visit</a></li>
-        <li class="d-none d-md-inline-block list-inline-item"><a class="text-white" href="https://www2.stetson.edu/today/">StetsonToday</a></li>
-        <li class="d-none d-md-inline-block list-inline-item"><a class="text-white" href="https://my.stetson.edu/">MyStetson</a></li>
-        <li class="list-inline-item"><a class="text-white" href="https://www.stetson.edu/administration/alumni/">Alumni</a></li>
-        <li class="list-inline-item"><a class="text-white" href="https://www.stetson.edu/administration/development/">Giving</a></li>
+        <li class="list-inline-item">
+          <a
+            class="text-white"
+            href="https://www.stetson.edu/administration/admissions/apply/"
+            >Apply</a
+          >
+        </li>
+        <li class="list-inline-item">
+          <a
+            class="text-white"
+            href="https://www.stetson.edu/other/visit/deland-campus.php"
+            >Visit</a
+          >
+        </li>
+        <li class="d-none d-md-inline-block list-inline-item">
+          <a class="text-white" href="https://www2.stetson.edu/today/"
+            >StetsonToday</a
+          >
+        </li>
+        <li class="d-none d-md-inline-block list-inline-item">
+          <a class="text-white" href="https://my.stetson.edu/">MyStetson</a>
+        </li>
+        <li class="list-inline-item">
+          <a
+            class="text-white"
+            href="https://www.stetson.edu/administration/alumni/"
+            >Alumni</a
+          >
+        </li>
+        <li class="list-inline-item">
+          <a
+            class="text-white"
+            href="https://www.stetson.edu/administration/development/"
+            >Giving</a
+          >
+        </li>
         <!-- End of additional <li> elements -->
         <li id="search-form" class="list-inline-item">
-            <form class="form-inline" method="get" action="https://www.stetson.edu/other/search/all.php">
-                <input type="hidden" name="cx" value="004483070290768435938:dw-fmkxniwm">
-                <input type="hidden" name="cof" value="FORID:10">
-                <input type="hidden" name="ie" value="UTF-8">
-                <div id="search-bar">
-                    <label for="q" class="form-label visually-hidden">Search</label>
-                    <div class="input-group input-group-sm">
-                        <input id="q" name="q" type="text" class="form-control" aria-label="Search" aria-describedby="sa">
-                        <button id="sa" name="sa" type="submit" class="btn btn-outline-light fw-bold"><i class="bi bi-search text-black" title="Open Search Bar"></i></button>
-                    </div>
-                </div>
-            </form>
-        </li>
-        <li id="search-open" class="list-inline-item"><a role="button" tabindex="0"><i class="bi bi-search text-white" title="Open Search Bar"></i></a></li>
-    </ul>
-
-        <div class="logo">
-            <img
-                    src="images/Stetson-University-logo-e1582920126675.webp"
-                    alt="Stetson Today Logo"
-                    class="logo"
-                    width="100%"
+          <form
+            class="form-inline"
+            method="get"
+            action="https://www.stetson.edu/other/search/all.php"
+          >
+            <input
+              type="hidden"
+              name="cx"
+              value="004483070290768435938:dw-fmkxniwm"
             />
-        </div>
-
-        <ul class="nav nav-pills nav-justified">
-            <li class="nav-item">
-                <a href="home.html" class="nav-link active" aria-current="page">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a
-                        class="nav-link dropdown-toggle"
-                        data-bs-toggle="dropdown"
-                        href="#"
-                        role="button"
-                        aria-haspopup="true"
-                        aria-expanded="true"
-                >Quick Links</a
+            <input type="hidden" name="cof" value="FORID:10" />
+            <input type="hidden" name="ie" value="UTF-8" />
+            <div id="search-bar">
+              <label for="q" class="form-label visually-hidden">Search</label>
+              <div class="input-group input-group-sm">
+                <input
+                  id="q"
+                  name="q"
+                  type="text"
+                  class="form-control"
+                  aria-label="Search"
+                  aria-describedby="sa"
+                />
+                <button
+                  id="sa"
+                  name="sa"
+                  type="submit"
+                  class="btn btn-outline-light fw-bold"
                 >
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Action</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Socials</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Announcements</a>
-            </li>
-        </ul>
+                  <i
+                    class="bi bi-search text-black"
+                    title="Open Search Bar"
+                  ></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </li>
+        <li id="search-open" class="list-inline-item">
+          <a role="button" tabindex="0"
+            ><i class="bi bi-search text-white" title="Open Search Bar"></i
+          ></a>
+        </li>
+      </ul>
 
-        <hr />
+      <div class="logo">
+        <img
+          src="images/Stetson-University-logo-e1582920126675.webp"
+          alt="Stetson Today Logo"
+          class="logo"
+          width="100%"
+        />
+      </div>
+
+      <ul class="nav nav-pills nav-justified">
+        <li class="nav-item">
+          <a href="home.html" class="nav-link active" aria-current="page"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            data-bs-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="true"
+            >Quick Links</a
+          >
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Action</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Socials</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Announcements</a>
+        </li>
+      </ul>
+
+      <hr />
     </header>
 
     <div class="container">
-        <div class="row">
-            <div class="col-sm-3">Side Menu</div>
-            <div class="col-sm-9">
-                <div class="single-title-con">
-                    <div class="single-title">
-                        <h1>
-                            The Stetson Corpus of Individual Differences and Eye Movements
-                            SCIDEM
-                        </h1>
-                    </div>
-                    <div class="post-meta post-meta-a">
-                        <span class="meta-item post-author">
-                            <a href="#" alt=""> Dr. Michael Eskenazi </a>
-                        </span>
-                        <span class="meta-item post-date">Date</span>
-                    </div>
-                </div>
-
-                <div class="card border-success" style="max-width: 30%">
-                    <div class="card-body">
-                        <h4 class="card-title">Instructions</h4>
-                        <p class="card-text">
-                            To be filled in later with Instructions about how to use the
-                            website. Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Ut, nostrum dolore inventore consectetur saepe officia
-                            fuga voluptatum nobis, cupiditate assumenda nisi facilis eaque
-                            aliquid voluptatibus veniam corrupti commodi impedit porro?
-                        </p>
-                    </div>
-                </div>
+      <div class="row">
+        <div class="col-sm-3">Side Menu</div>
+        <div class="col-sm-9">
+          <div class="single-title-con">
+            <div class="single-title">
+              <h1>
+                The Stetson Corpus of Individual Differences and Eye Movements
+                SCIDEM
+              </h1>
             </div>
+            <div class="post-meta post-meta-a">
+              <span class="meta-item post-author">
+                <a href="#" alt=""> Dr. Michael Eskenazi </a>
+              </span>
+              <span class="meta-item post-date">Date</span>
+            </div>
+          </div>
+
+          <div class="card border-success" style="max-width: 30%">
+            <div class="card-body">
+              <h4 class="card-title">Instructions</h4>
+              <p class="card-text">
+                To be filled in later with Instructions about how to use the
+                website. Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Ut, nostrum dolore inventore consectetur saepe officia
+                fuga voluptatum nobis, cupiditate assumenda nisi facilis eaque
+                aliquid voluptatibus veniam corrupti commodi impedit porro?
+              </p>
+            </div>
+          </div>
+
+          <form class="m-3">
+            <div class="identifying-variables">
+              <h3>Identifying Variables</h3>
+              <p>
+                These variables are used to build the basic structure of the
+                data file such as Participant ID, Passage ID, and Word.
+                Participant ID and Passage ID should always automatically be
+                checked by default.
+              </p>
+              <div class="m-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="participantId"
+                  checked
+                />
+                <label class="form-check-label me-1" for="participantId">
+                  Participant ID
+                </label>
+                <i
+                  class="fas fa-question-circle"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Participant Identification number"
+                ></i>
+              </div>
+              <div class="m-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="trialOrder"
+                />
+                <label class="form-check-label me-1" for="trialOrder">
+                  Trial Order
+                </label>
+                <i
+                  class="fas fa-question-circle"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Order in which each page was presented"
+                ></i>
+              </div>
+
+              <div class="m-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="passageId"
+                  checked
+                />
+                <label class="form-check-label me-1" for="passageId">
+                  Passage ID
+                </label>
+                <i
+                  class="fas fa-question-circle"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="The number corresponding to each of the 55 pages of text that participants read"
+                ></i>
+              </div>
+              <div class="m-3 form-check">
+                <input type="checkbox" class="form-check-input" id="iAId" />
+                <label class="form-check-label me-1" for="iAId"> IA ID </label>
+                <i
+                  class="fas fa-question-circle"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Identification number for each word within each page"
+                ></i>
+              </div>
+              <div class="m-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="uniqueWordId"
+                />
+                <label class="form-check-label me-1" for="uniqueWordId">
+                  Unique Word ID
+                </label>
+                <i
+                  class="fas fa-question-circle"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Unique identification number for every word presented in the entire experiment"
+                ></i>
+              </div>
+              <div class="m-3 form-check">
+                <input type="checkbox" class="form-check-input" id="word" />
+                <label class="form-check-label me-1" for="word"> Word </label>
+                <i
+                  class="fas fa-question-circle"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="The word that the participant read"
+                ></i>
+              </div>
+              <div class="m-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="wordCleaned"
+                />
+                <label class="form-check-label me-1" for="wordCleaned">
+                  Word Cleaned
+                </label>
+                <i
+                  class="fas fa-question-circle"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="The word that the participant read but with all punctuations removed such as periods or commas"
+                ></i>
+              </div>
+              <div class="m-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="passageText"
+                />
+                <label class="form-check-label me-1" for="passageText">
+                  Passage Text
+                </label>
+                <i
+                  class="fas fa-question-circle"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="The first 100 characters of the entire page that the participant read"
+                ></i>
+              </div>
+            </div>
+            <div class="primary-header eye-movement-data">
+              <h3>Eye Movement Data</h3>
+              <p>
+                In this section, you can select variables that were recorded
+                during the eye-tracking portion of this study.
+              </p>
+              <div class="subheader trial-data m-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="eyeMovementTrialData"
+                />
+                <label class="form-check-label me-1" for="eyeMovementTrialData">
+                  <h4>Trial Data</h4>
+                </label>
+                <p>
+                  This section includes data about the entire trial, not
+                  individual interest areas
+                </p>
+                <div class="m-3 form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="eyeTracked"
+                  />
+                  <label class="form-check-label me-1" for="eyeTracked">
+                    Eye Tracked
+                  </label>
+                  <i
+                    class="fas fa-question-circle"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Whether the right or left eye was tracked"
+                  ></i>
+                </div>
+                <div class="m-3 form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="totalTrialTime"
+                  />
+                  <label class="form-check-label me-1" for="totalTrialTime">
+                    Total Trial Time
+                  </label>
+                  <i
+                    class="fas fa-question-circle"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Total amount of time in milliseconds that the participant spent reading this page"
+                  ></i>
+                </div>
+                <div class="m-3 form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="totalTrialFixationCount"
+                  />
+                  <label
+                    class="form-check-label me-1"
+                    for="totalTrialFixationCount"
+                  >
+                    Total Trial Fixation Count
+                  </label>
+                  <i
+                    class="fas fa-question-circle"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Total number of fixations made on this page"
+                  ></i>
+                </div>
+                <div class="m-3 form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="totalTrialIas"
+                  />
+                  <label class="form-check-label me-1" for="totalTrialIas">
+                    Total Trial Ias
+                  </label>
+                  <i
+                    class="fas fa-question-circle"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Total number of interest areas on this page"
+                  ></i>
+                </div>
+                <div class="m-3 form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="totalTrialIasVisited"
+                  />
+                  <label
+                    class="form-check-label me-1"
+                    for="totalTrialIasVisited"
+                  >
+                    Total Trial IAs Visited
+                  </label>
+                  <i
+                    class="fas fa-question-circle"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Total number of interest areas that the eyes entered on this page"
+                  ></i>
+                </div>
+                <div class="m-3 form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="percentIasVisited"
+                  />
+                  <label class="form-check-label me-1" for="percentIasVisited">
+                    Percent of IAs Visited
+                  </label>
+                  <i
+                    class="fas fa-question-circle"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Percentage of interest areas that the eyes entered on this page"
+                  ></i>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
         </div>
+      </div>
     </div>
-</body>
-<footer>
-<section id="contacts" title="Contact Information">
-    <h2>SCIDEM Research</h2>
-    <p>
-        421 N. Woodland Blvd.<br>
-        Unit 8270<br>
-        DeLand, Florida 32723<br>
-        Phone: <a href="tel:3868228171">386-822-8171</a><br>
-    </p>
-</section>
-<nav id="legal" aria-label="Footer Links">
-    <ul>
+  </body>
+  <footer>
+    <section id="contacts" title="Contact Information">
+      <h2>SCIDEM Research</h2>
+      <p>
+        421 N. Woodland Blvd.<br />
+        Unit 8270<br />
+        DeLand, Florida 32723<br />
+        Phone: <a href="tel:3868228171">386-822-8171</a><br />
+      </p>
+    </section>
+    <nav id="legal" aria-label="Footer Links">
+      <ul>
         <li><a href="https://www.stetson.edu/other/search/">A-Z Index</a></li>
-        <li><a
-                href="https://www.stetson.edu/administration/human-resources/job-opportunities.php">Employment</a>
+        <li>
+          <a
+            href="https://www.stetson.edu/administration/human-resources/job-opportunities.php"
+            >Employment</a
+          >
         </li>
-        <li><a href="https://www.stetson.edu/administration/web-services/web-policies.php">Privacy Policy</a>
+        <li>
+          <a
+            href="https://www.stetson.edu/administration/web-services/web-policies.php"
+            >Privacy Policy</a
+          >
         </li>
-        <li><a href="https://www.stetson.edu/other/title-ix/">Nondiscrimination / Title IX</a></li>
-        <li><a href="https://www.stetson.edu/forms/contact/technical/">Website Feedback</a></li>
+        <li>
+          <a href="https://www.stetson.edu/other/title-ix/"
+            >Nondiscrimination / Title IX</a
+          >
+        </li>
+        <li>
+          <a href="https://www.stetson.edu/forms/contact/technical/"
+            >Website Feedback</a
+          >
+        </li>
         <li><a href="https://www.stetson.edu/other/contact/">Contact Us</a></li>
-    </ul>
-</nav>
-<nav id="socialmedia" aria-label="Social Media Links">
-    <ul>
-        <li class="mx-2"><a target="_blank" id="facebook" href="https://www.facebook.com/stetsonU"><i
-                        class="bi bi-facebook bg-black text-white"></i><span
-                        class="visually-hidden">Facebook</span></a></li>
-        <li class="mx-2"><a target="_blank" id="twitter" href="https://twitter.com/stetsonu"><i
-                        class="bi bi-twitter-x bg-black text-white"></i><span
-                        class="visually-hidden">Twitter</span></a></li>
-        <li class="mx-2"><a target="_blank" id="instagram" href="https://instagram.com/stetsonu"><i
-                        class="bi bi-instagram bg-black text-white"></i><span
-                        class="visually-hidden">Instagram</span></a></li>
-        <li class="mx-2"><a target="_blank" id="youtube" href="https://www.youtube.com/user/stetsonvideos"><i
-                        class="bi bi-youtube bg-black text-white"></i><span
-                        class="visually-hidden">YouTube</span></a></li>
-        <li class="mx-2"><a target="_blank" id="tiktok" href="https://www.tiktok.com/@stetsonu?lang=en"><i
-                        class="bi bi-tiktok bg-black text-white"></i><span class="visually-hidden">TikTok</span></a>
+      </ul>
+    </nav>
+    <nav id="socialmedia" aria-label="Social Media Links">
+      <ul>
+        <li class="mx-2">
+          <a
+            target="_blank"
+            id="facebook"
+            href="https://www.facebook.com/stetsonU"
+            ><i class="bi bi-facebook bg-black text-white"></i
+            ><span class="visually-hidden">Facebook</span></a
+          >
         </li>
-    </ul>
-</nav>
-<p>&#169; Stetson University</p>
-</footer>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
-        integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
-<script
-        src="https://www.stetson.edu/software/webgarage/system/themes/stetson-university/assets/js/theme.min.js"></script>
-<script>
+        <li class="mx-2">
+          <a target="_blank" id="twitter" href="https://twitter.com/stetsonu"
+            ><i class="bi bi-twitter-x bg-black text-white"></i
+            ><span class="visually-hidden">Twitter</span></a
+          >
+        </li>
+        <li class="mx-2">
+          <a
+            target="_blank"
+            id="instagram"
+            href="https://instagram.com/stetsonu"
+            ><i class="bi bi-instagram bg-black text-white"></i
+            ><span class="visually-hidden">Instagram</span></a
+          >
+        </li>
+        <li class="mx-2">
+          <a
+            target="_blank"
+            id="youtube"
+            href="https://www.youtube.com/user/stetsonvideos"
+            ><i class="bi bi-youtube bg-black text-white"></i
+            ><span class="visually-hidden">YouTube</span></a
+          >
+        </li>
+        <li class="mx-2">
+          <a
+            target="_blank"
+            id="tiktok"
+            href="https://www.tiktok.com/@stetsonu?lang=en"
+            ><i class="bi bi-tiktok bg-black text-white"></i
+            ><span class="visually-hidden">TikTok</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <p>&#169; Stetson University</p>
+  </footer>
+  <script
+    data-cfasync="false"
+    src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
+    integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0="
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://www.stetson.edu/software/webgarage/system/themes/stetson-university/assets/js/theme.min.js"></script>
+  <script>
     $(function () {
-        $(".question IMG").click(function () {
-            $(".question P").each(function () {
-                if ($(this).is(":visible")) {
-                    $(this).slideUp("fast");
-                }
-            });
-            $(this).parent().next("P").slideToggle("fast");
+      $(".question IMG").click(function () {
+        $(".question P").each(function () {
+          if ($(this).is(":visible")) {
+            $(this).slideUp("fast");
+          }
         });
+        $(this).parent().next("P").slideToggle("fast");
+      });
     });
-</script>
+  </script>
 </html>
