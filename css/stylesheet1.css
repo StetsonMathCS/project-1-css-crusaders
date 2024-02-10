@@ -67,3 +67,7 @@ footer {
     padding: 20px;
     text-align: center;
 }
+
+input[type="checkbox"] {
+    border-color: #8a8f89;
+}
