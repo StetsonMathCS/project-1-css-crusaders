@@ -1,782 +1,831 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      The Stetson Corpus of Individual Differences and Eye Movements SCIDEM
-    </title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link href="css/bootstrap-reboot.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/stylesheet1.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&family=Poppins:wght@200;300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://www.stetson.edu/software/webgarage/system/themes/stetson-university/assets/css/theme.min.css?v=20230210"
-    />
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script
-      src="https://kit.fontawesome.com/2af3598ccd.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <header>
-      <ul class="list-inline mb-0">
-        <!-- Place the additional <li> elements here -->
-        <li class="list-inline-item">
-          <a
-            class="text-white"
-            href="https://www.stetson.edu/administration/admissions/apply/"
-            >Apply</a
-          >
-        </li>
-        <li class="list-inline-item">
-          <a
-            class="text-white"
-            href="https://www.stetson.edu/other/visit/deland-campus.php"
-            >Visit</a
-          >
-        </li>
-        <li class="d-none d-md-inline-block list-inline-item">
-          <a class="text-white" href="https://www2.stetson.edu/today/"
-            >StetsonToday</a
-          >
-        </li>
-        <li class="d-none d-md-inline-block list-inline-item">
-          <a class="text-white" href="https://my.stetson.edu/">MyStetson</a>
-        </li>
-        <li class="list-inline-item">
-          <a
-            class="text-white"
-            href="https://www.stetson.edu/administration/alumni/"
-            >Alumni</a
-          >
-        </li>
-        <li class="list-inline-item">
-          <a
-            class="text-white"
-            href="https://www.stetson.edu/administration/development/"
-            >Giving</a
-          >
-        </li>
-        <!-- End of additional <li> elements -->
-        <li id="search-form" class="list-inline-item">
-          <form
-            class="form-inline"
-            method="get"
-            action="https://www.stetson.edu/other/search/all.php"
-          >
-            <input
-              type="hidden"
-              name="cx"
-              value="004483070290768435938:dw-fmkxniwm"
-            />
-            <input type="hidden" name="cof" value="FORID:10" />
-            <input type="hidden" name="ie" value="UTF-8" />
-            <div id="search-bar">
-              <label for="q" class="form-label visually-hidden">Search</label>
-              <div class="input-group input-group-sm">
-                <input
-                  id="q"
-                  name="q"
-                  type="text"
-                  class="form-control"
-                  aria-label="Search"
-                  aria-describedby="sa"
-                />
-                <button
-                  id="sa"
-                  name="sa"
-                  type="submit"
-                  class="btn btn-outline-light fw-bold"
-                >
-                  <i
-                    class="bi bi-search text-black"
-                    title="Open Search Bar"
-                  ></i>
-                </button>
-              </div>
-            </div>
-          </form>
-        </li>
-        <li id="search-open" class="list-inline-item">
-          <a role="button" tabindex="0"
-            ><i class="bi bi-search text-white" title="Open Search Bar"></i
-          ></a>
-        </li>
-      </ul>
 
-      <div class="logo">
-        <img
-          src="images/Stetson-University-logo-e1582920126675.webp"
-          alt="Stetson Today Logo"
-          class="logo"
-          width="100%"
-        />
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    The Stetson Corpus of Individual Differences and Eye Movements SCIDEM
+  </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/bootstrap-reboot.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/stylesheet1.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&family=Poppins:wght@200;300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&display=swap" />
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
+  <link rel="stylesheet"
+    href="https://www.stetson.edu/software/webgarage/system/themes/stetson-university/assets/css/theme.min.css?v=20230210" />
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/2af3598ccd.js" crossorigin="anonymous"></script>
+</head>
 
-      <ul class="nav nav-pills nav-justified">
-        <li class="nav-item">
-          <a href="home.html" class="nav-link active" aria-current="page"
-            >Home</a
-          >
-        </li>
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            data-bs-toggle="dropdown"
-            href="#"
-            role="button"
-            aria-haspopup="true"
-            aria-expanded="true"
-            >Quick Links</a
-          >
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Action</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">Socials</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">Announcements</a>
-        </li>
-      </ul>
-
-      <hr />
-    </header>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-3">Side Menu</div>
-        <div class="col-sm-9">
-          <div class="single-title-con">
-            <div class="single-title">
-              <h1>
-                The Stetson Corpus of Individual Differences and Eye Movements
-                SCIDEM
-              </h1>
-            </div>
-            <div class="post-meta post-meta-a">
-              <span class="meta-item post-author">
-                <a href="#" alt=""> Dr. Michael Eskenazi </a>
-              </span>
-              <span class="meta-item post-date">Date</span>
+<body>
+  <header>
+    <ul class="list-inline mb-0">
+      <!-- Place the additional <li> elements here -->
+      <li class="list-inline-item">
+        <a class="text-white" href="https://www.stetson.edu/administration/admissions/apply/">Apply</a>
+      </li>
+      <li class="list-inline-item">
+        <a class="text-white" href="https://www.stetson.edu/other/visit/deland-campus.php">Visit</a>
+      </li>
+      <li class="d-none d-md-inline-block list-inline-item">
+        <a class="text-white" href="https://www2.stetson.edu/today/">StetsonToday</a>
+      </li>
+      <li class="d-none d-md-inline-block list-inline-item">
+        <a class="text-white" href="https://my.stetson.edu/">MyStetson</a>
+      </li>
+      <li class="list-inline-item">
+        <a class="text-white" href="https://www.stetson.edu/administration/alumni/">Alumni</a>
+      </li>
+      <li class="list-inline-item">
+        <a class="text-white" href="https://www.stetson.edu/administration/development/">Giving</a>
+      </li>
+      <!-- End of additional <li> elements -->
+      <li id="search-form" class="list-inline-item">
+        <form class="form-inline" method="get" action="https://www.stetson.edu/other/search/all.php">
+          <input type="hidden" name="cx" value="004483070290768435938:dw-fmkxniwm" />
+          <input type="hidden" name="cof" value="FORID:10" />
+          <input type="hidden" name="ie" value="UTF-8" />
+          <div id="search-bar">
+            <label for="q" class="form-label visually-hidden">Search</label>
+            <div class="input-group input-group-sm">
+              <input id="q" name="q" type="text" class="form-control" aria-label="Search" aria-describedby="sa" />
+              <button id="sa" name="sa" type="submit" class="btn btn-outline-light fw-bold">
+                <i class="bi bi-search text-black" title="Open Search Bar"></i>
+              </button>
             </div>
           </div>
+        </form>
+      </li>
+      <li id="search-open" class="list-inline-item">
+        <a role="button" tabindex="0"><i class="bi bi-search text-white" title="Open Search Bar"></i></a>
+      </li>
+    </ul>
 
-          <div class="card border-success" style="max-width: 30%">
-            <div class="card-body">
-              <h4 class="card-title">Instructions</h4>
-              <p class="card-text">
-                To be filled in later with Instructions about how to use the
-                website. Lorem ipsum, dolor sit amet consectetur adipisicing
-                elit. Ut, nostrum dolore inventore consectetur saepe officia
-                fuga voluptatum nobis, cupiditate assumenda nisi facilis eaque
-                aliquid voluptatibus veniam corrupti commodi impedit porro?
-              </p>
-            </div>
-          </div>
+    <div class="logo">
+      <img src="images/Stetson-University-logo-e1582920126675.webp" alt="Stetson Today Logo" class="logo"
+        width="100%" />
+    </div>
 
-          <form class="m-3">
-            <div class="identifying-variables">
-              <h3>Identifying Variables</h3>
-              <p>
-                These variables are used to build the basic structure of the
-                data file such as Participant ID, Passage ID, and Word.
-                Participant ID and Passage ID should always automatically be
-                checked by default.
-              </p>
-              <div class="m-3 form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="participantId"
-                  checked
-                />
-                <label class="form-check-label me-1" for="participantId">
-                  Participant ID
-                </label>
-                <i
-                  class="fas fa-question-circle"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="top"
-                  title="Participant Identification number"
-                ></i>
-              </div>
-              <div class="m-3 form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="trialOrder"
-                />
-                <label class="form-check-label me-1" for="trialOrder">
-                  Trial Order
-                </label>
-                <i
-                  class="fas fa-question-circle"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="top"
-                  title="Order in which each page was presented"
-                ></i>
-              </div>
-
-              <div class="m-3 form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="passageId"
-                  checked
-                />
-                <label class="form-check-label me-1" for="passageId">
-                  Passage ID
-                </label>
-                <i
-                  class="fas fa-question-circle"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="top"
-                  title="The number corresponding to each of the 55 pages of text that participants read"
-                ></i>
-              </div>
-              <div class="m-3 form-check">
-                <input type="checkbox" class="form-check-input" id="iAId" />
-                <label class="form-check-label me-1" for="iAId"> IA ID </label>
-                <i
-                  class="fas fa-question-circle"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="top"
-                  title="Identification number for each word within each page"
-                ></i>
-              </div>
-              <div class="m-3 form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="uniqueWordId"
-                />
-                <label class="form-check-label me-1" for="uniqueWordId">
-                  Unique Word ID
-                </label>
-                <i
-                  class="fas fa-question-circle"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="top"
-                  title="Unique identification number for every word presented in the entire experiment"
-                ></i>
-              </div>
-              <div class="m-3 form-check">
-                <input type="checkbox" class="form-check-input" id="word" />
-                <label class="form-check-label me-1" for="word"> Word </label>
-                <i
-                  class="fas fa-question-circle"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="top"
-                  title="The word that the participant read"
-                ></i>
-              </div>
-              <div class="m-3 form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="wordCleaned"
-                />
-                <label class="form-check-label me-1" for="wordCleaned">
-                  Word Cleaned
-                </label>
-                <i
-                  class="fas fa-question-circle"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="top"
-                  title="The word that the participant read but with all punctuations removed such as periods or commas"
-                ></i>
-              </div>
-              <div class="m-3 form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="passageText"
-                />
-                <label class="form-check-label me-1" for="passageText">
-                  Passage Text
-                </label>
-                <i
-                  class="fas fa-question-circle"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="top"
-                  title="The first 100 characters of the entire page that the participant read"
-                ></i>
-              </div>
-            </div>
-            <div class="primary-header eye-movement-data">
-              <h3>Eye Movement Data</h3>
-              <p>
-                In this section, you can select variables that were recorded
-                during the eye-tracking portion of this study.
-              </p>
-              <div class="subheader trial-data m-3 form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="eyeMovementTrialData"
-                />
-                <label class="form-check-label me-1" for="eyeMovementTrialData">
-                  <h4>Trial Data</h4>
-                </label>
-                <p>
-                  This section includes data about the entire trial, not
-                  individual interest areas
-                </p>
-                <div class="m-3 form-check">
-                  <input
-                    type="checkbox"
-                    class="form-check-input"
-                    id="eyeTracked"
-                  />
-                  <label class="form-check-label me-1" for="eyeTracked">
-                    Eye Tracked
-                  </label>
-                  <i
-                    class="fas fa-question-circle"
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="top"
-                    title="Whether the right or left eye was tracked"
-                  ></i>
-                </div>
-                <div class="m-3 form-check">
-                  <input
-                    type="checkbox"
-                    class="form-check-input"
-                    id="totalTrialTime"
-                  />
-                  <label class="form-check-label me-1" for="totalTrialTime">
-                    Total Trial Time
-                  </label>
-                  <i
-                    class="fas fa-question-circle"
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="top"
-                    title="Total amount of time in milliseconds that the participant spent reading this page"
-                  ></i>
-                </div>
-                <div class="m-3 form-check">
-                  <input
-                    type="checkbox"
-                    class="form-check-input"
-                    id="totalTrialFixationCount"
-                  />
-                  <label
-                    class="form-check-label me-1"
-                    for="totalTrialFixationCount"
-                  >
-                    Total Trial Fixation Count
-                  </label>
-                  <i
-                    class="fas fa-question-circle"
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="top"
-                    title="Total number of fixations made on this page"
-                  ></i>
-                </div>
-                <div class="m-3 form-check">
-                  <input
-                    type="checkbox"
-                    class="form-check-input"
-                    id="totalTrialIas"
-                  />
-                  <label class="form-check-label me-1" for="totalTrialIas">
-                    Total Trial Ias
-                  </label>
-                  <i
-                    class="fas fa-question-circle"
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="top"
-                    title="Total number of interest areas on this page"
-                  ></i>
-                </div>
-                <div class="m-3 form-check">
-                  <input
-                    type="checkbox"
-                    class="form-check-input"
-                    id="totalTrialIasVisited"
-                  />
-                  <label
-                    class="form-check-label me-1"
-                    for="totalTrialIasVisited"
-                  >
-                    Total Trial IAs Visited
-                  </label>
-                  <i
-                    class="fas fa-question-circle"
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="top"
-                    title="Total number of interest areas that the eyes entered on this page"
-                  ></i>
-                </div>
-                <div class="m-3 form-check">
-                  <input
-                    type="checkbox"
-                    class="form-check-input"
-                    id="percentIasVisited"
-                  />
-                  <label class="form-check-label me-1" for="percentIasVisited">
-                    Percent of IAs Visited
-                  </label>
-                  <i
-                    class="fas fa-question-circle"
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="top"
-                    title="Percentage of interest areas that the eyes entered on this page"
-                  ></i>
-                </div>
-              </div>
-
-              <div class="subheader interest-area-size m-3 form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="eyeMovementInterestAreaSize"
-                />
-                <label
-                  class="form-check-label me-1"
-                  for="eyeMovementInterestAreaSize"
-                >
-                  <h4>Interest Area Size</h4>
-                </label>
-                <p>
-                  This section includes data about the entire trial, not
-                  individual interest areas
-                </p>
-                <div class="m-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="iaSize" />
-                  <label class="form-check-label me-1" for="iaSize">
-                    IA Size
-                  </label>
-                  <i
-                    class="fas fa-question-circle"
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="top"
-                    title="Pixel area of this interest area"
-                  ></i>
-                </div>
-                <div class="m-3 form-check">
-                  <input
-                    type="checkbox"
-                    class="form-check-input"
-                    id="iaBottomSidePixel"
-                  />
-                  <label class="form-check-label me-1" for="iaBottomSidePixel">
-                    IA Bottom Side Pixel
-                  </label>
-                  <i
-                    class="fas fa-question-circle"
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="top"
-                    title="Bottom side pixel position of this interest area"
-                  ></i>
-                </div>
-                <div class="m-3 form-check">
-                  <input
-                    type="checkbox"
-                    class="form-check-input"
-                    id="iaTopSidePixel"
-                  />
-                  <label class="form-check-label me-1" for="iaTopSidePixel">
-                    IA Top Side Pixel
-                  </label>
-                  <i
-                    class="fas fa-question-circle"
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="top"
-                    title="Top side pixel position of this interest area"
-                  ></i>
-                </div>
-                <div class="m-3 form-check">
-                  <input
-                    type="checkbox"
-                    class="form-check-input"
-                    id="iaLeftSidePixel"
-                  />
-                  <label class="form-check-label me-1" for="iaLeftSidePixel">
-                    IA Left Side Pixel
-                  </label>
-                  <i
-                    class="fas fa-question-circle"
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="top"
-                    title="Left side pixel position of this interest area"
-                  ></i>
-                </div>
-                <div class="m-3 form-check">
-                  <input
-                    type="checkbox"
-                    class="form-check-input"
-                    id="iaRightSidePixel"
-                  />
-                  <label class="form-check-label me-1" for="iaRightSidePixel">
-                    IA Right Side Pixel
-                  </label>
-                  <i
-                    class="fas fa-question-circle"
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="top"
-                    title="Right side pixel position of this interest area"
-                  ></i>
-                </div>
-              </div>
-              <div class="subheader total-reading-time m-3 form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="eyeMovementTotalReadingTime"
-                />
-                <label
-                  class="form-check-label me-1"
-                  for="eyeMovementTotalReadingTime"
-                >
-                  <h4>Total Reading Time</h4>
-                </label>
-                <p>
-                  This section includes total reading time in the interest area.
-                </p>
-              </div>
-              <div class="subheader first-fixation-data m-3 form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="eyeMovementFirstFixationData"
-                />
-                <label
-                  class="form-check-label me-1"
-                  for="eyeMovementFirstFixationData"
-                >
-                  <h4>First Fixation Data</h4>
-                </label>
-                <p>
-                  This section includes information about the first fixation
-                  that was made in the interest area.
-                </p>
-              </div>
-              <div class="subheader first-run-data m-3 form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="eyeMovementFirstRunData"
-                />
-                <label
-                  class="form-check-label me-1"
-                  for="eyeMovementFirstRunData"
-                >
-                  <h4>First Run Data</h4>
-                </label>
-                <p>
-                  This section includes information about the first time that
-                  the participants’ eyes entered the interest area until when
-                  the participants’ eyes first left the interest area.
-                </p>
-              </div>
-              <div class="subheader fixation-data m-3 form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="eyeMovementFixationData"
-                />
-                <label
-                  class="form-check-label me-1"
-                  for="eyeMovementFixationData"
-                >
-                  <h4>Fixation Data</h4>
-                </label>
-                <p>
-                  This section includes information about the number and types
-                  of fixation made in the interest area.
-                </p>
-              </div>
-              <div class="subheader regression-data m-3 form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="eyeMovementRegressionData"
-                />
-                <label
-                  class="form-check-label me-1"
-                  for="eyeMovementRegressionData"
-                >
-                  <h4>Regression Data</h4>
-                </label>
-                <p>
-                  This section includes information about regressive eye
-                  movements.
-                </p>
-              </div>
-              <div class="subheader other-eye-movement-data m-3 form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="eyeMovementOtherEyeMovementData"
-                />
-                <label
-                  class="form-check-label me-1"
-                  for="eyeMovementOtherEyeMovementData"
-                >
-                  <h4>Other Eye Movement Data</h4>
-                </label>
-                <p>
-                  This section includes other eye movement behaviors such as
-                  word skipping
-                </p>
-              </div>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+    <ul class="nav nav-pills nav-justified">
+      <li class="nav-item">
+        <a href="home.html" class="nav-link active" aria-current="page">Home</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+          aria-expanded="true">Quick Links</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Action</a>
         </div>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Socials</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Announcements</a>
+      </li>
+    </ul>
+
+    <hr />
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">Side Menu</div>
+      <div class="col-sm-9">
+        <div class="single-title-con">
+          <div class="single-title">
+            <h1>
+              The Stetson Corpus of Individual Differences and Eye Movements
+              SCIDEM
+            </h1>
+          </div>
+          <div class="post-meta post-meta-a">
+            <span class="meta-item post-author">
+              <a href="#" alt=""> Dr. Michael Eskenazi </a>
+            </span>
+            <span class="meta-item post-date">Date</span>
+          </div>
+        </div>
+
+        <div class="card border-success" style="max-width: 30%">
+          <div class="card-body">
+            <h4 class="card-title">Instructions</h4>
+            <p class="card-text">
+              To be filled in later with Instructions about how to use the
+              website. Lorem ipsum, dolor sit amet consectetur adipisicing
+              elit. Ut, nostrum dolore inventore consectetur saepe officia
+              fuga voluptatum nobis, cupiditate assumenda nisi facilis eaque
+              aliquid voluptatibus veniam corrupti commodi impedit porro?
+            </p>
+          </div>
+        </div>
+
+        <form class="m-3">
+          <div class="identifying-variables">
+            <h3>Identifying Variables</h3>
+            <p>
+              These variables are used to build the basic structure of the
+              data file such as Participant ID, Passage ID, and Word.
+              Participant ID and Passage ID should always automatically be
+              checked by default.
+            </p>
+            <div class="m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="participantId" checked />
+              <label class="form-check-label me-1" for="participantId">
+                Participant ID
+              </label>
+              <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Participant Identification number"></i>
+            </div>
+            <div class="m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="trialOrder" />
+              <label class="form-check-label me-1" for="trialOrder">
+                Trial Order
+              </label>
+              <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Order in which each page was presented"></i>
+            </div>
+
+            <div class="m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="passageId" checked />
+              <label class="form-check-label me-1" for="passageId">
+                Passage ID
+              </label>
+              <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="The number corresponding to each of the 55 pages of text that participants read"></i>
+            </div>
+            <div class="m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="iAId" />
+              <label class="form-check-label me-1" for="iAId"> IA ID </label>
+              <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Identification number for each word within each page"></i>
+            </div>
+            <div class="m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="uniqueWordId" />
+              <label class="form-check-label me-1" for="uniqueWordId">
+                Unique Word ID
+              </label>
+              <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Unique identification number for every word presented in the entire experiment"></i>
+            </div>
+            <div class="m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="word" />
+              <label class="form-check-label me-1" for="word"> Word </label>
+              <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="The word that the participant read"></i>
+            </div>
+            <div class="m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="wordCleaned" />
+              <label class="form-check-label me-1" for="wordCleaned">
+                Word Cleaned
+              </label>
+              <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="The word that the participant read but with all punctuations removed such as periods or commas"></i>
+            </div>
+            <div class="m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="passageText" />
+              <label class="form-check-label me-1" for="passageText">
+                Passage Text
+              </label>
+              <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="The first 100 characters of the entire page that the participant read"></i>
+            </div>
+          </div>
+          <div class="primary-header eye-movement-data">
+            <h3>Eye Movement Data</h3>
+            <p>
+              In this section, you can select variables that were recorded
+              during the eye-tracking portion of this study.
+            </p>
+            <div class="subheader trial-data m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="eyeMovementTrialData" />
+              <label class="form-check-label me-1" for="eyeMovementTrialData">
+                <h4>Trial Data</h4>
+              </label>
+              <p>
+                This section includes data about the entire trial, not
+                individual interest areas
+              </p>
+              <div class="m-3 form-check">
+                <input type="checkbox" class="form-check-input" id="eyeTracked" />
+                <label class="form-check-label me-1" for="eyeTracked">
+                  Eye Tracked
+                </label>
+                <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="Whether the right or left eye was tracked"></i>
+              </div>
+              <div class="m-3 form-check">
+                <input type="checkbox" class="form-check-input" id="totalTrialTime" />
+                <label class="form-check-label me-1" for="totalTrialTime">
+                  Total Trial Time
+                </label>
+                <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="Total amount of time in milliseconds that the participant spent reading this page"></i>
+              </div>
+              <div class="m-3 form-check">
+                <input type="checkbox" class="form-check-input" id="totalTrialFixationCount" />
+                <label class="form-check-label me-1" for="totalTrialFixationCount">
+                  Total Trial Fixation Count
+                </label>
+                <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="Total number of fixations made on this page"></i>
+              </div>
+              <div class="m-3 form-check">
+                <input type="checkbox" class="form-check-input" id="totalTrialIas" />
+                <label class="form-check-label me-1" for="totalTrialIas">
+                  Total Trial Ias
+                </label>
+                <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="Total number of interest areas on this page"></i>
+              </div>
+              <div class="m-3 form-check">
+                <input type="checkbox" class="form-check-input" id="totalTrialIasVisited" />
+                <label class="form-check-label me-1" for="totalTrialIasVisited">
+                  Total Trial IAs Visited
+                </label>
+                <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="Total number of interest areas that the eyes entered on this page"></i>
+              </div>
+              <div class="m-3 form-check">
+                <input type="checkbox" class="form-check-input" id="percentIasVisited" />
+                <label class="form-check-label me-1" for="percentIasVisited">
+                  Percent of IAs Visited
+                </label>
+                <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="Percentage of interest areas that the eyes entered on this page"></i>
+              </div>
+            </div>
+
+            <div class="subheader interest-area-size m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="eyeMovementInterestAreaSize" />
+              <label class="form-check-label me-1" for="eyeMovementInterestAreaSize">
+                <h4>Interest Area Size</h4>
+              </label>
+              <p>
+                This section includes data about the entire trial, not
+                individual interest areas
+              </p>
+              <div class="m-3 form-check">
+                <input type="checkbox" class="form-check-input" id="iaSize" />
+                <label class="form-check-label me-1" for="iaSize">
+                  IA Size
+                </label>
+                <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="Pixel area of this interest area"></i>
+              </div>
+              <div class="m-3 form-check">
+                <input type="checkbox" class="form-check-input" id="iaBottomSidePixel" />
+                <label class="form-check-label me-1" for="iaBottomSidePixel">
+                  IA Bottom Side Pixel
+                </label>
+                <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="Bottom side pixel position of this interest area"></i>
+              </div>
+              <div class="m-3 form-check">
+                <input type="checkbox" class="form-check-input" id="iaTopSidePixel" />
+                <label class="form-check-label me-1" for="iaTopSidePixel">
+                  IA Top Side Pixel
+                </label>
+                <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="Top side pixel position of this interest area"></i>
+              </div>
+              <div class="m-3 form-check">
+                <input type="checkbox" class="form-check-input" id="iaLeftSidePixel" />
+                <label class="form-check-label me-1" for="iaLeftSidePixel">
+                  IA Left Side Pixel
+                </label>
+                <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="Left side pixel position of this interest area"></i>
+              </div>
+              <div class="m-3 form-check">
+                <input type="checkbox" class="form-check-input" id="iaRightSidePixel" />
+                <label class="form-check-label me-1" for="iaRightSidePixel">
+                  IA Right Side Pixel
+                </label>
+                <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="Right side pixel position of this interest area"></i>
+              </div>
+            </div>
+            <div class="subheader total-reading-time m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="eyeMovementTotalReadingTime" />
+              <label class="form-check-label me-1" for="eyeMovementTotalReadingTime">
+                <h4>Total Reading Time</h4>
+              </label>
+              <p>
+                This section includes total reading time in the interest area.
+              </p>
+            </div>
+            <div class="subheader first-fixation-data m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="eyeMovementFirstFixationData" />
+              <label class="form-check-label me-1" for="eyeMovementFirstFixationData">
+                <h4>First Fixation Data</h4>
+              </label>
+              <p>
+                This section includes information about the first fixation
+                that was made in the interest area.
+              </p>
+            </div>
+            <div class="subheader first-run-data m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="eyeMovementFirstRunData" />
+              <label class="form-check-label me-1" for="eyeMovementFirstRunData">
+                <h4>First Run Data</h4>
+              </label>
+              <p>
+                This section includes information about the first time that
+                the participants’ eyes entered the interest area until when
+                the participants’ eyes first left the interest area.
+              </p>
+            </div>
+            <div class="subheader fixation-data m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="eyeMovementFixationData" />
+              <label class="form-check-label me-1" for="eyeMovementFixationData">
+                <h4>Fixation Data</h4>
+              </label>
+              <p>
+                This section includes information about the number and types
+                of fixation made in the interest area.
+              </p>
+            </div>
+            <div class="subheader regression-data m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="eyeMovementRegressionData" />
+              <label class="form-check-label me-1" for="eyeMovementRegressionData">
+                <h4>Regression Data</h4>
+              </label>
+              <p>
+                This section includes information about regressive eye
+                movements.
+              </p>
+            </div>
+            <div class="subheader other-eye-movement-data m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="eyeMovementOtherEyeMovementData" />
+              <label class="form-check-label me-1" for="eyeMovementOtherEyeMovementData">
+                <h4>Other Eye Movement Data</h4>
+              </label>
+              <p>
+                This section includes other eye movement behaviors such as
+                word skipping
+              </p>
+            </div>
+          </div> <!-- End of Eye movement data-->
+          <div class="primary-header lexical-variables">
+            <h3>Lexical Variables</h3>
+            <p>
+              In this section, you can select variables related to the lexical characteristics of each word that was
+              read in the eye-tracking portion of this study. The predictability variables were identified from the
+              Provo Corpus (Luke & Christianson, 2018) and all other variables were generated using the South Carolina
+              Psycholinguistic Metabase (SCOPE; Gao et al., 2022).
+            </p>
+            <div class="subheader length m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="lexical-Length" />
+              <label class="form-check-label me-1" for="lexical-Length">
+                <h4>Length</h4>
+              </label>
+              <div class="m-3 form-check">
+                <input type="checkbox" class="form-check-input" id="word-length" />
+                <label class="form-check-label me-1" for="word-length">
+                  Word Length
+                </label>
+                <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="The total number of characters in this word not including punctuations"></i>
+              </div>
+            </div>
+            
+            <div class="subheader predictability m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="lexical-predictability" />
+              <label class="form-check-label me-1" for="lexical-predictability">
+                <h4>Predictability</h4>
+              </label>
+              <div class="m-3 form-check">
+                <input type="checkbox" class="form-check-input" id="total-response-count" />
+                <label class="form-check-label me-1" for="total-response-count">
+                  Total Response Count
+                </label>
+                <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="The total number of responses provided on the cloze task for this word token"></i>
+              </div>
+              <div class="m-3 form-check">
+                <input type="checkbox" class="form-check-input" id="unique-response-count" />
+                <label class="form-check-label me-1" for="unique-response-count">
+                  Unique Response Count
+                </label>
+                <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="The total number of unique responses provided on the cloze task for this word token"></i>
+              </div>
+              <div class="m-3 form-check">
+                <input type="checkbox" class="form-check-input" id="orthographic-match" />
+                <label class="form-check-label me-1" for="orthographic-match">
+                  Orthographic Match
+                </label>
+                <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="Cloze probability: The proportion of responses that were an orthographic match with the target word (e.g., Target = “apple” and response = “apple”)"></i>
+              </div>
+              <div class="m-3 form-check">
+                <input type="checkbox" class="form-check-input" id="orthographic-match-model" />
+                <label class="form-check-label me-1" for="orthographic-match-model">
+                  Orthographic Match Model
+                </label>
+                <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="The same as OrthographicMatch, but instead of raw proportions this variable is the fitted values generated by a logit mixed-effects model that included only random by-word intercepts. These values correlate with OrthographicMatch (r = .999) but never include 0 or 1. This variable is provided for users who desire to log transform the predictability measures"></i>
+              </div>
+              <div class="m-3 form-check">
+                <input type="checkbox" class="form-check-input" id="modal-response?" />
+                <label class="form-check-label me-1" for="modal-response?">
+                  Modal Response?
+                </label>
+                <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="Whether the target word was the most commonly produced response (1) or not (0)"></i>
+              </div>
+              <div class="m-3 form-check">
+                <input type="checkbox" class="form-check-input" id="modal-response" />
+                <label class="form-check-label me-1" for="modal-response">
+                  Modal Response
+                </label>
+                <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="The modal response. If IsModalResponse is 1, this is the same as Word (see above). If IsModalResponse is 0, this is whichever response was provided most frequently"></i>
+              </div>
+              <div class="m-3 form-check">
+                <input type="checkbox" class="form-check-input" id="model-response-count" />
+                <label class="form-check-label me-1" for="model-response-count">
+                  Model Response Count
+                </label>
+                <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="A count of how many times the modal response was provided in the cloze procedure"></i>
+              </div>
+              <div class="m-3 form-check">
+                <input type="checkbox" class="form-check-input" id="certainity" />
+                <label class="form-check-label me-1" for="certainity">
+                  Certainity
+                </label>
+                <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="The cloze probability of the modal response. Certainty = ModalResponseCount/ResponseCount"></i>
+              </div>
+              <div class="m-3 form-check">
+                <input type="checkbox" class="form-check-input" id="part-of-speech-match" />
+                <label class="form-check-label me-1" for="part-of-speech-match">
+                  Part of Speech Match
+                </label>
+                <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="The proportion of responses with the same POS as the target, using Word_POS (e.g., Target and response are both nouns)"></i>
+              </div>
+              <div class="m-3 form-check">
+                <input type="checkbox" class="form-check-input" id="part-of-speech-match-model" />
+                <label class="form-check-label me-1" for="part-of-speech-match-model">
+                  Part of Speech Match Model
+                </label>
+                <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="The same as POSMatch, but instead of raw proportions this variable is the fitted values generated by a logit mixed-effects model that included only random by-word intercepts. These values correlate with POSMatch (r = .999) but never include 0 or 1. This variable is provided for users who desire to log transform the predictability measures"></i>
+              </div>
+              <div class="m-3 form-check">
+                <input type="checkbox" class="form-check-input" id="inflection-match" />
+                <label class="form-check-label me-1" for="inflection-match">
+                  Inflection Match
+                </label>
+                <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="The proportion of responses that carried the same inflection (number for nouns, tense for verbs) as the target (for nouns and verbs only)—e.g., target and response are both past-tense verbs"></i>
+              </div>
+              <div class="m-3 form-check">
+                <input type="checkbox" class="form-check-input" id="inflection-match-model" />
+                <label class="form-check-label me-1" for="inflection-match-model">
+                  Inflection Match Model
+                </label>
+                <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="The same as InflectionMatch, but instead of raw proportions this variable is the fitted values generated by a logit mixed-effects model that included only random by-word intercepts. These values correlate with InflectionMatch (r = .999) but never include 0 or 1. This variable is provided for users who desire to log transform the predictability measures"></i>
+              </div>
+              <div class="m-3 form-check">
+                <input type="checkbox" class="form-check-input" id="lsa-context-score" />
+                <label class="form-check-label me-1" for="lsa-context-score">
+                  LSA Context Score
+                </label>
+                <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="A measure of the semantic association between the target word and the entire preceding passage context, obtained using latent semantic analysis (Landauer & Dumais, 1997; http://lsa.colorado.edu/). For example, the LSA score for the word “rumblings” was obtained by comparing “rumblings” to the preceding context “There are now.” This score is a measure of the contextual fit of a given target word"></i>
+              </div>
+              <div class="m-3 form-check">
+                <input type="checkbox" class="form-check-input" id="lsa-response-match-score" />
+                <label class="form-check-label me-1" for="lsa-response-match-score">
+                  LSA Response Match Score
+                </label>
+                <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="The mean LSA match score between the target and all provided responses. For example, pairwise LSA was used to compare the target “carts” with the responses provided in the cloze procedure (e.g., “horses,” “slower,” and “the”), and the LSA scores for all responses were averaged. This measure is an estimate of the semantic predictability of a given target word (i.e., could participants have a good sense for the general meaning of the upcoming word, even if they cannot predict exactly what that word will be)"></i>
+              </div>
+            </div>
+            
+            <div class="subheader part-of-speech m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="lexical-part-of-speech" />
+              <label class="form-check-label me-1" for="lexical-part-of-speech">
+                <h4>Part of Speech</h4>
+              </label>
+            
+
+            <div class="m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="part-of-speech" />
+              <label class="form-check-label me-1" for="part-of-speech">
+                Part of Speech
+              </label>
+              <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="The part of speech tag of the target word (See http://ucrel.lancs.ac.uk/claws/ for more information on the meaning of the specific tags.)"></i>
+            </div><div class="m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="content-or-function" />
+              <label class="form-check-label me-1" for="content-or-function">
+                Content or Function
+              </label>
+              <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Whether the word is a content word or a function word, based on POS_CLAWS"></i>
+            </div><div class="m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="part-of-speech-limited" />
+              <label class="form-check-label me-1" for="part-of-speech-limited">
+                Part of Speech Limited
+              </label>
+              <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="A more general grouping of parts of speech, based on POS_CLAWS, which includes the following categories: adjective, adverb, article, conjunction, determiner, existential, infinitive marker, negative, noun, number, preposition, pronoun, verb"></i>
+            </div>
+          </div>
+
+            <div class="subheader frequency-and-Familarity m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="lexical-frequency-and-familarity" />
+              <label class="form-check-label me-1" for="lexical-frequency-and-familarity">
+                <h4>Frequency and Familarity</h4>
+              </label>
+          
+
+            <div class="m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="frequency-hal" />
+              <label class="form-check-label me-1" for="frequency-hal">
+                Frequency HAL
+              </label>
+              <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Word frequency norms from Hyperspace Analogue to Language (HAL) corpus as Log10"></i>
+            </div>
+            <div class="m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="frequency-subtlexus" />
+              <label class="form-check-label me-1" for="frequency-subtlexus">
+                Frequency SUBTLEXus
+              </label>
+              <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Word frequency norms from SUBTLEXus corpus as Log10"></i>
+            </div>
+            <div class="m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="familarity" />
+              <label class="form-check-label me-1" for="familarity">
+                Familarity
+              </label>
+              <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Percentage of participants who know the word well enough to give answer for the concreteness rating from Brysbaert 2014"></i>
+            </div>
+            <div class="m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="prevalence" />
+              <label class="form-check-label me-1" for="prevalence">
+                Prevalence
+              </label>
+              <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Percentage of participants who know the word; converted into z-scores from Brysbaert 2019"></i>
+            </div>
+          </div>
+
+
+            <div class="subheader phonology m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="lexical-phonology" />
+              <label class="form-check-label me-1" for="lexical-phonology">
+                <h4>Phonology</h4>
+              </label>
+            
+
+            <div class="m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="number-of-phonemes" />
+              <label class="form-check-label me-1" for="number-of-phonemes">
+                Number of Phonemes
+              </label>
+              <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Number of phonemes in a word from English Lexicon Project (Balota, 2007)"></i>
+            </div>
+            <div class="m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="number-of-syllables" />
+              <label class="form-check-label me-1" for="number-of-syllables">
+                Number of Syllables
+              </label>
+              <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Number of syllables in a word from English Lexicon Project (Balota, 2007)"></i>
+            </div>
+            <div class="m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="pld20" />
+              <label class="form-check-label me-1" for="pld20">
+                PLD20
+              </label>
+              <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="The mean of a word to its 20 closest phonological neighbors based on Levenshtein distance from English Lexicon Project (Balota, 2007)"></i>
+            </div>
+            <div class="m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="phonemic-neighbors" />
+              <label class="form-check-label me-1" for="phonemic-neighbors">
+                Phonemic Neighbors
+              </label>
+              <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="The number of words that can be obtained by changing one phoneme while preserving the identity and position of the other phonemes from English Lexicon Project (Balota, 2007)"></i>
+            </div>
+          </div>
+
+            <div class="subheader semantics m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="lexical-semantics" />
+              <label class="form-check-label me-1" for="lexical-semantics">
+                <h4>Semantics</h4>
+              </label>
+            
+
+            <div class="m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="concreteness" />
+              <label class="form-check-label me-1" for="concreteness">
+                Concreteness
+              </label>
+              <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="The degree to which the concept can be experienced directly through the senses from abstract (1) to concrete (5) from Brysbaert 2014"></i>
+            </div>
+            <div class="m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="semantic-diversity" />
+              <label class="form-check-label me-1" for="semantic-diversity">
+                Semantic Diversity
+              </label>
+              <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="The degree to which different contexts associated with a word vary in their meaning from Hoffman et al. 2013"></i>
+            </div>
+            <div class="m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="semantic-neighbors" />
+              <label class="form-check-label me-1" for="semantic-neighbors">
+                Semantic Neighbors
+              </label>
+              <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="The number of semantic neighbors within a threshold from Shaoul and Westbury 2006"></i>
+            </div>
+            <div class="m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="semantic-neighbors-d" />
+              <label class="form-check-label me-1" for="semantic-neighbors-d">
+                Semantic Neighbors D
+              </label>
+              <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="The average radius of co-occurrence, which is the average distance between the words in the semantic neighborhood and the target word from Shaoul and Westbury 2006"></i>
+            </div>
+            <div class="m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="vectors" />
+              <label class="form-check-label me-1" for="vectors">
+                Vectors
+              </label>
+              <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Vectors created from 300 hidden layer linear neuron in the neural net model trained on the Google news dataset from Mikolov et al. 2013"></i>
+            </div>
+          </div>
+
+            <div class="subheader orthography-phonology m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="lexical-orthography-phonology" />
+              <label class="form-check-label me-1" for="lexical-orthography-phonology">
+                <h4>Orthography-Phonology</h4>
+              </label>
+            
+
+            <div class="m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="phonographic-neighbors" />
+              <label class="form-check-label me-1" for="phonographic-neighbors">
+                Phonographic Neighbors
+              </label>
+              <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="The number of words that can be obtained by changing one letter and one phoneme while preserving the identity and position of the other letters and phonemes from Balota et al. 2007"></i>
+            </div>
+            <div class="m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="phonogoraphic-neighbors-frequency" />
+              <label class="form-check-label me-1" for="phonogoraphic-neighbors-frequency">
+                Phonographic Neighbors Frequency
+              </label>
+              <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="The average frequency of the phonographic neighborhood of the word from Balota et al. 2007"></i>
+            </div>
+          </div>
+
+            <div class="subheader morphology m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="lexical-morphology" />
+              <label class="form-check-label me-1" for="lexical-morphology">
+                <h4>Morphology</h4>
+              </label>
+            
+
+            <div class="m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="number-of-morphemes" />
+              <label class="form-check-label me-1" for="number-of-morphemes">
+                Number of Morphemes
+              </label>
+              <i class="fas fa-question-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="The number of morphemes in a word from MorphoLex Sanchez-Gutierrez et al. 2018"></i>
+            </div>
+          </div>
+
+          </div> <!-- end of lexical variables -->
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
       </div>
     </div>
-  </body>
-  <footer>
-    <section id="contacts" title="Contact Information">
-      <h2>SCIDEM Research</h2>
-      <p>
-        421 N. Woodland Blvd.<br />
-        Unit 8270<br />
-        DeLand, Florida 32723<br />
-        Phone: <a href="tel:3868228171">386-822-8171</a><br />
-      </p>
-    </section>
-    <nav id="legal" aria-label="Footer Links">
-      <ul>
-        <li><a href="https://www.stetson.edu/other/search/">A-Z Index</a></li>
-        <li>
-          <a
-            href="https://www.stetson.edu/administration/human-resources/job-opportunities.php"
-            >Employment</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://www.stetson.edu/administration/web-services/web-policies.php"
-            >Privacy Policy</a
-          >
-        </li>
-        <li>
-          <a href="https://www.stetson.edu/other/title-ix/"
-            >Nondiscrimination / Title IX</a
-          >
-        </li>
-        <li>
-          <a href="https://www.stetson.edu/forms/contact/technical/"
-            >Website Feedback</a
-          >
-        </li>
-        <li><a href="https://www.stetson.edu/other/contact/">Contact Us</a></li>
-      </ul>
-    </nav>
-    <nav id="socialmedia" aria-label="Social Media Links">
-      <ul>
-        <li class="mx-2">
-          <a
-            target="_blank"
-            id="facebook"
-            href="https://www.facebook.com/stetsonU"
-            ><i class="bi bi-facebook bg-black text-white"></i
-            ><span class="visually-hidden">Facebook</span></a
-          >
-        </li>
-        <li class="mx-2">
-          <a target="_blank" id="twitter" href="https://twitter.com/stetsonu"
-            ><i class="bi bi-twitter-x bg-black text-white"></i
-            ><span class="visually-hidden">Twitter</span></a
-          >
-        </li>
-        <li class="mx-2">
-          <a
-            target="_blank"
-            id="instagram"
-            href="https://instagram.com/stetsonu"
-            ><i class="bi bi-instagram bg-black text-white"></i
-            ><span class="visually-hidden">Instagram</span></a
-          >
-        </li>
-        <li class="mx-2">
-          <a
-            target="_blank"
-            id="youtube"
-            href="https://www.youtube.com/user/stetsonvideos"
-            ><i class="bi bi-youtube bg-black text-white"></i
-            ><span class="visually-hidden">YouTube</span></a
-          >
-        </li>
-        <li class="mx-2">
-          <a
-            target="_blank"
-            id="tiktok"
-            href="https://www.tiktok.com/@stetsonu?lang=en"
-            ><i class="bi bi-tiktok bg-black text-white"></i
-            ><span class="visually-hidden">TikTok</span></a
-          >
-        </li>
-      </ul>
-    </nav>
-    <p>&#169; Stetson University</p>
-  </footer>
-  <script
-    data-cfasync="false"
-    src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
-    integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0="
-    crossorigin="anonymous"
-  ></script>
-  <script src="https://www.stetson.edu/software/webgarage/system/themes/stetson-university/assets/js/theme.min.js"></script>
-  <script>
-    $(function () {
-      $(".question IMG").click(function () {
-        $(".question P").each(function () {
-          if ($(this).is(":visible")) {
-            $(this).slideUp("fast");
-          }
-        });
-        $(this).parent().next("P").slideToggle("fast");
+  </div>
+</body>
+<footer>
+  <section id="contacts" title="Contact Information">
+    <h2>SCIDEM Research</h2>
+    <p>
+      421 N. Woodland Blvd.<br />
+      Unit 8270<br />
+      DeLand, Florida 32723<br />
+      Phone: <a href="tel:3868228171">386-822-8171</a><br />
+    </p>
+  </section>
+  <nav id="legal" aria-label="Footer Links">
+    <ul>
+      <li><a href="https://www.stetson.edu/other/search/">A-Z Index</a></li>
+      <li>
+        <a href="https://www.stetson.edu/administration/human-resources/job-opportunities.php">Employment</a>
+      </li>
+      <li>
+        <a href="https://www.stetson.edu/administration/web-services/web-policies.php">Privacy Policy</a>
+      </li>
+      <li>
+        <a href="https://www.stetson.edu/other/title-ix/">Nondiscrimination / Title IX</a>
+      </li>
+      <li>
+        <a href="https://www.stetson.edu/forms/contact/technical/">Website Feedback</a>
+      </li>
+      <li><a href="https://www.stetson.edu/other/contact/">Contact Us</a></li>
+    </ul>
+  </nav>
+  <nav id="socialmedia" aria-label="Social Media Links">
+    <ul>
+      <li class="mx-2">
+        <a target="_blank" id="facebook" href="https://www.facebook.com/stetsonU"><i
+            class="bi bi-facebook bg-black text-white"></i><span class="visually-hidden">Facebook</span></a>
+      </li>
+      <li class="mx-2">
+        <a target="_blank" id="twitter" href="https://twitter.com/stetsonu"><i
+            class="bi bi-twitter-x bg-black text-white"></i><span class="visually-hidden">Twitter</span></a>
+      </li>
+      <li class="mx-2">
+        <a target="_blank" id="instagram" href="https://instagram.com/stetsonu"><i
+            class="bi bi-instagram bg-black text-white"></i><span class="visually-hidden">Instagram</span></a>
+      </li>
+      <li class="mx-2">
+        <a target="_blank" id="youtube" href="https://www.youtube.com/user/stetsonvideos"><i
+            class="bi bi-youtube bg-black text-white"></i><span class="visually-hidden">YouTube</span></a>
+      </li>
+      <li class="mx-2">
+        <a target="_blank" id="tiktok" href="https://www.tiktok.com/@stetsonu?lang=en"><i
+            class="bi bi-tiktok bg-black text-white"></i><span class="visually-hidden">TikTok</span></a>
+      </li>
+    </ul>
+  </nav>
+  <p>&#169; Stetson University</p>
+</footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
+  integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+<script
+  src="https://www.stetson.edu/software/webgarage/system/themes/stetson-university/assets/js/theme.min.js"></script>
+<script>
+  $(function () {
+    $(".question IMG").click(function () {
+      $(".question P").each(function () {
+        if ($(this).is(":visible")) {
+          $(this).slideUp("fast");
+        }
+      });
+      $(this).parent().next("P").slideToggle("fast");
+    });
+  });
+</script>
+
+<script>
+  // Get all subheader checkboxes
+  const subheaders = document.querySelectorAll('.subheader input[type="checkbox"]');
+
+  // Add event listener to each subheader checkbox
+  subheaders.forEach(subheader => {
+    subheader.addEventListener('change', function() {
+      // Get the checkboxes directly under the subheader
+      const checkboxes = this.parentElement.querySelectorAll('.form-check-input');
+      
+      // Check or uncheck only the checkboxes directly under the subheader based on the subheader checkbox state
+      checkboxes.forEach(checkbox => {
+        checkbox.checked = this.checked;
       });
     });
-  </script>
+  });
+</script>
+
+
 </html>
