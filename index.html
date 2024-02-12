@@ -183,7 +183,28 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-sm-3">Side Menu</div>
+        <div class="col-sm-3" id="Cleaning Method" >
+          <div class="cleaning-method">
+            <h3>Cleaning Method</h3>
+            <p>
+              Please select which base data file you would like to use to create your customized data set.  There are two base data files to choose from: baseline and modal.  The baseline data file includes all eye movement data with no trimming.  The modal data file includes data trimming using the most common methods used to clean eye movement data: merging fixations that are shorter than 80ms with longer fixations within .50 degree of visual angle and deleting fixations that are shorter than 80ms or longer than 800ms.  The user might choose additional data cleaning methods such as removing outliers.  For more information about best practices for cleaning eye movement data, see Eskenazi (2023) here
+            </p>
+            <div class="m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="cleaningMethod" />
+              <label class="form-check-label me-1" for="cleaningMethod">
+                Baseline Data Cleaning File
+              </label>
+             
+            </div>
+            <div class="m-3 form-check">
+              <input type="checkbox" class="form-check-input" id="cleaningMethodDescription" />
+              <label class="form-check-label me-1" for="cleaningMethodDescription">
+                Modal Data File
+              </label>
+              
+            </div>
+          </div>
+        </div>
         <div class="col-sm-9">
           <div class="single-title-con">
             <div class="single-title">
@@ -192,15 +213,27 @@
                 SCIDEM
               </h1>
             </div>
-            <div class="post-meta post-meta-a">
+            <div class="post-meta post-meta-a" id="naming">
               <span class="meta-item post-author">
-                <a href="#" alt=""> Dr. Michael Eskenazi </a>
+                <a href="#" alt="Researcher Information Link"> Dr. Michael Eskenazi </a>
               </span>
               <span class="meta-item post-date">Date</span>
             </div>
           </div>
 
-          <div class="card border-success" style="max-width: 30%">
+        
+          <div class="img-container">
+            <img
+              src="images/eye.png"
+              alt="Eye Tracking"
+              class="img-fluid"
+              width="50%"
+            
+            />
+          </div>
+
+         
+          <div class="card border-success" style="max-width: 100%">
             <div class="card-body">
               <h4 class="card-title">Instructions</h4>
               <p class="card-text">
@@ -212,20 +245,7 @@
               </p>
             </div>
           </div>
-
-          
-          <div class="img-container">
-            <img
-              src="images/eye.png"
-              alt="Eye Tracking"
-              class="img-fluid"
-              width="60%"
-            />
-          </div>
-
-         
-          
-
+<!--Start of Identifying-Variables-->
           <form class="m-3">
             <div class="identifying-variables">
               <h3>Identifying Variables</h3>
@@ -1946,8 +1966,6 @@
             <!-- end of lexical variables -->
 
             <hr/>
-            
-          
           <!--Beginning of Individual Differences-->
           <div class="individual-differences">
             <h3>Individual Differences</h3>

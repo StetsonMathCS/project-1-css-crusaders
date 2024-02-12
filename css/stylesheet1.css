@@ -73,11 +73,16 @@ input[type="checkbox"] {
 }
 .img-container {
     position: relative;
-    left: 340px; 
-    top: -400px; 
+    left: 200px; 
+    padding-top: 20px;
+    padding-bottom: 40px;
+   
   }
 
   .btn-container {
     text-align: center; 
   }
 
+  #naming{
+    text-align: center;
+  }
