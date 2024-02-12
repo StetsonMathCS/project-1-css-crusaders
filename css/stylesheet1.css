@@ -71,5 +71,13 @@ footer {
 input[type="checkbox"] {
     border-color: #8a8f89;
 }
+.img-container {
+    position: relative;
+    left: 340px; 
+    top: -400px; 
+  }
 
+  .btn-container {
+    text-align: center; 
+  }
 
